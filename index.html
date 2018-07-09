@@ -3,7 +3,7 @@
 <head>
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -13,24 +13,20 @@
       height: 200px;
       background: #aaa;
   }
+
   </style>
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark " style="background-color: #308BB4;">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -42,9 +38,9 @@
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
+<div class="container-fluid" style="margin-top:60px;">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 border">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
       <div class="fakeimg">Fake Image</div>
@@ -67,7 +63,7 @@
       </ul>
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-8 border">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Dec 7, 2017</h5>
       <div class="fakeimg">Fake Image</div>
@@ -81,10 +77,7 @@
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-</div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
 </div>
 
 </body>
